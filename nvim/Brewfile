@@ -1,0 +1,7 @@
+brew "neovim"
+brew "git"
+brew "ripgrep"
+brew "fd"
+brew "fzf"
+brew "lazygit"
+brew "node"
