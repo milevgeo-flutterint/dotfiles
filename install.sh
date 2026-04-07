@@ -42,4 +42,15 @@ bash $DOTFILES/chrome/restore.sh
 # macOS settings
 bash $DOTFILES/macos.sh
 
+if [ ! -f ~/.yarnrc.yml ]; then
+  cp $DOTFILES/yarnrc.yml.template ~/.yarnrc.yml
+  echo "⚠️  Don't forget to add your Artifactory token in ~/.yarnrc.yml"
+fi
+
+# Git config
+git config --global user.name "milevgeo-flutterint"
+git config --global user.email "georgi_milev@flutterint.com"
+git config --global core.editor "nvim"
+git config --global url."git@github.com:".insteadOf "https://github.com/"
+
 echo "✅ Done!"

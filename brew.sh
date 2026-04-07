@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install Homebrew if missing
-if ! command -v brew &> /dev/null; then
+if ! command -v brew &>/dev/null; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
@@ -33,6 +33,7 @@ fnm install --lts
 fnm use --lts
 
 # Global npm packages
+npm install -g yarn
 npm install -g nx
 
 echo "✅ Brew done!"

@@ -1,0 +1,3 @@
+npmAlwaysAuth: true
+npmAuthToken: <replace with your token>
+npmRegistryServer: 'https://artifactory.pyrsoftware.ca/artifactory/api/npm/npm-all/'
