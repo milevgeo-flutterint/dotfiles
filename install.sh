@@ -15,7 +15,10 @@ ln -sf $DOTFILES/.tmux.conf ~/.tmux.conf
 ln -sf $DOTFILES/.gitconfig ~/.gitconfig
 
 # Ghostty
-ln -sf $DOTFILES/ghostty.config ~/Library/Application\ Support/com.mitchellh.ghostty/config.ghostty
+mkdir -p ~/.config/ghostty
+mkdir -p ~/Library/Application\ Support/com.mitchellh.ghostty
+ln -sf $DOTFILES/ghostty.config ~/.config/ghostty/config.ghostty
+ln -sf ~/.config/ghostty/config.ghostty ~/Library/Application\ Support/com.mitchellh.ghostty/config.ghostty
 
 # LazyVim
 mkdir -p ~/.config/nvim
