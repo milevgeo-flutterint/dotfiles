@@ -42,6 +42,11 @@ launchctl load ~/Library/LaunchAgents/com.user.keyboard.plist
 # Chrome bookmarks
 bash $DOTFILES/chrome/restore.sh
 
+# VS Code Extensions
+code --install-extension esbenp.prettier-vscode
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension stylelint.vscode-stylelint
+
 # macOS settings
 bash $DOTFILES/macos.sh
 
